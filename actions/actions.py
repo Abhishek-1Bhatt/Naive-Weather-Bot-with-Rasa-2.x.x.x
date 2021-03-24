@@ -21,7 +21,7 @@ class ActionWeather(Action):
              tracker: Tracker,
              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-		api_key = "f17d4608e53f78034c591d1c799b9523"
+		api_key = "-----your open weather map api key-----"
 		base_url = "https://api.openweathermap.org/data/2.5/weather?"
 		location = str(tracker.get_slot('location'))
 		final_url = base_url + "q=" + location + "&units=metric&APPID=" + api_key
