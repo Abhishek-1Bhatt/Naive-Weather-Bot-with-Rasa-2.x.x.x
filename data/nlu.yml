@@ -1,0 +1,63 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hola
+    - hello, how are you today?
+    - yo
+    - hiya
+    - hello there
+    - Umm, hey
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye then
+    - see you later
+    - see ya
+    - okay, thanks, cya
+
+- intent: ask_weather_location
+  examples: |
+    - How's the weather today in [Berlin]{"entity":"location", "value":"Berlin"}
+    - How's weather in [Stuttgart]{"entity":"location", "value":"Stuggart"} today?
+    - What's going on in [Delhi]{"entity":"location", "value":"Delhi"} today?
+    - In [Prague]{"entity":"location", "value":"Prague"}
+    - at [Delhi]{"entity":"location", "value":"Delhi"}
+    - [Nancy]{"entity":"location", "value":"Nancy"}
+    - Tell me weather of [Dresden]{"entity":"location", "value":"Dresden"}
+    - What about in [Rome]{"entity":"location", "value":"Rome"} today?
+    - Show me weather of [Delhi]{"entity":"location", "value":"Delhi"}
+    - How about weather in [Italy]{"entity":"location", "value":"Italy"}
+    - Sorry, in [Vatican]{"entity":"location", "value":"Vatican"}
+    - Uhh, how about in [Bulgaria]{"entity":"location", "value":"Bulgaria"}?
+
+- intent: ask_weather
+  examples: |
+    - How's the weather today?
+    - What's today's weather?
+    - How is it out there today?
+    - What's overall weather today?
+    - Tell me today's weather

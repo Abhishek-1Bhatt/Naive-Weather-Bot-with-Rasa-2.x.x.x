@@ -1,0 +1,23 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say greeting whenever the user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Ask for location when asked for weather
+  steps:
+  - intent: ask_weather
+  - action: utter_ask_location
+
+- rule: Return the weather conditions when asked
+  steps:
+  - intent: ask_weather_location
+  - action: action_weather
