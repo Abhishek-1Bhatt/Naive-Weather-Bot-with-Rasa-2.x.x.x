@@ -7,5 +7,5 @@ The training data is contained in the data folder. It contains stories, nlu, and
 - Clone this repository
 - Obtain the OpenWeatherMap API key and provide it as the value of api_key variable in actions.py file,
 #### Now inside the folder where this repository is cloned
-- Open a terminal and run the command: rasa run actions{Gets the endpoint for API calls up and running}
+- Open a terminal and run the command: rasa run actions{Gets the endpoint server for API calls up and running}
 - Now in a separate terminal run : rasa shell {This runs the weather chat bot in your terminal}
